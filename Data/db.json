@@ -1,0 +1,28 @@
+{
+  "Notes": [
+    {
+      "title": "Personal Finance",
+      "details": "Personal finance is specific to an individual’s situation and activity. Therefore, related financial strategies depend largely on a person’s earnings, living requirements, goals, and desires. Financial planning involves analyzing the current financial position of individuals to formulate strategies for future needs within financial constraints.",
+      "category": "work",
+      "id": 1
+    },
+    {
+      "title": "Corporate Finance",
+      "details": "Corporate finance refers to the financial activities related to running a corporation. A division or department usually is set up to oversee those financial activities. For example, a large company may have to decide whether to raise additional funds through a bond issue or stock offering. Investment banks may advise the firm on such considerations and help it market the securities.",
+      "category": "work",
+      "id": 2
+    },
+    {
+      "title": "Public Finance",
+      "details": "Public finance includes taxing, spending, budgeting, and debt-issuance policies that affect how a government pays for the services it provides to the public. It is a part of fiscal policy.",
+      "category": "work",
+      "id": 3
+    },
+    {
+      "title": "Skipper's Birthday",
+      "details": "sakdlfjlksdjlasdfkjsdnfjksnfksnfnsadafjklsdf",
+      "category": "reminder",
+      "id": 4
+    }
+  ]
+}

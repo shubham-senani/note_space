@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import Notes from "./pages/Notes"
+import Create from "./pages/Create"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {
+  Experimental_CssVarsProvider as CssVarsProvider,
+  experimental_extendTheme as extendTheme,
+} from '@mui/material/styles';
+import Layout from "./Layout";
 
+const theme = extendTheme({
+  palette: {
+    primary: {
+      main: '#F8485E'      
+    },
+    secondary: {
+      main: "#EEEEEE"
+    }
+  },
+  typography: {
+    fontFamily: 'QuickSand',
+    fontWeightLight: 400,
+    fontWeightMedium: 600,
+    fontWeightBold: 700,
+    fontWeightRegular: 700
+  }
+})
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CssVarsProvider theme={theme}>
+      <Router>
+        <Layout>
+          <Switch>
+            <Route exact path="/">
+              <Notes/>
+            </Route>
+            <Route path="/create">
+              <Create/>
+            </Route>
+          </Switch>
+        </Layout>
+      </Router>
+    </CssVarsProvider>
   );
 }
 
